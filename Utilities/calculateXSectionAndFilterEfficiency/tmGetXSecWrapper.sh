@@ -26,4 +26,5 @@ cd ${PATH_XSEC_SCRIPTS}
 rm -f datasets_${IDENTIFIER}_mcm.txt && touch datasets_${IDENTIFIER}_mcm.txt
 echo ${MCM_ID} >> datasets_${IDENTIFIER}_mcm.txt
 
-./calculateXSectionAndFilterEfficiency.sh -f datasets_DiPhotonJets_2016_mcm.txt -m -n 1000000
+./calculateXSectionAndFilterEfficiency.sh -f datasets_${IDENTIFIER}_mcm.txt -m -n 1000000
+rm -f datasets_${IDENTIFIER}_mcm.txt
